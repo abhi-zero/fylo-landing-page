@@ -1,13 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>fylo-landing-page</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <title>fylo-landing-page</title>
+</head>
+
+<body class="">
+  <main>
+    <nav>
+      <div class="top-0 right-0 left-0 fixed flex justify-between items-center-safe px-8 py-5 nav-container">
+        <a href="#" target="_blank" rel="noopener noreferrer" class="logo"><img src="/images/logo.svg" alt="" /></a>
+        <ul class="hidden md:flex gap-15 overflow-y font-Raleway nav-links">
+          <li class="nav-li">
+            <a href="#"
+              class="drop-shadow-Navy850 drop-shadow-xl hover:drop-shadow-Offwhite h-10 font-bold text-Offwhite hover:text-White transition-[filter,color] duration-500 ease-in-out filter nav-link">Features</a>
+          </li>
+          <li class="nav-li">
+            <a href="#"
+              class="drop-shadow-Navy850 drop-shadow-xl hover:drop-shadow-Offwhite font-bold text-Offwhite hover:text-White transition-[filter,color] duration-500 ease-in-out filter nav-link">Team</a>
+          </li>
+          <li class="nav-li">
+            <a href="#"
+              class="drop-shadow-Navy850 drop-shadow-xl hover:drop-shadow-Offwhite font-bold text-Offwhite hover:text-White transition-[filter,color] duration-500 ease-in-out filter nav-link">Sign
+              In</a>
+          </li>
+        </ul>
+        <button class="group md:hidden block text-2xl cursor-pointer menu-toggle">
+          <i class="group-[.open]:hidden block ri-menu-3-line"></i>
+          <i class="hidden group-[.open]:block ri-close-large-fill"></i>
+        </button>
+      </div>
+      <div class="md:hidden block top-20 right-0 left-0 absolute bg-white/30 backdrop-blur-md py-10 w-full mobile-nav">
+        <ul class="flex flex-col gap-8 font-Raleway text-2xl text-center nav-links">
+          <li>
+            <a href="#"
+              class="font-bold text-Offwhite nav-link">Features</a>
+          </li>
+          <li>
+            <a href="#"
+              class="font-bold text-Offwhite nav-link">Team</a>
+          </li>
+          <li>
+            <a href="#"
+              class="font-bold text-Offwhite nav-link">Sign
+              In</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/anime.js"></script>
+</body>
+
 </html>
