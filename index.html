@@ -16,9 +16,9 @@
 <body class="">
   <main>
     <nav>
-      <div class="top-0 right-0 left-0 fixed flex justify-between items-center-safe px-8 py-5 nav-container">
+      <div class="top-0 right-0 left-0 z-100 fixed flex justify-between items-center-safe bg-Navy850 px-8 py-5 nav-container">
         <a href="#" target="_blank" rel="noopener noreferrer" class="logo"><img src="/images/logo.svg" alt="" /></a>
-        <ul class="hidden md:flex gap-15 overflow-y font-Raleway nav-links">
+        <ul class="hidden md:flex gap-15 overflow-y-hidden font-Raleway nav-links">
           <li class="nav-li">
             <a href="#"
               class="drop-shadow-Navy850 drop-shadow-xl hover:drop-shadow-Offwhite h-10 font-bold text-Offwhite hover:text-White transition-[filter,color] duration-500 ease-in-out filter nav-link">Features</a>
@@ -38,27 +38,70 @@
           <i class="hidden group-[.open]:block ri-close-large-fill"></i>
         </button>
       </div>
-      <div class="md:hidden block top-20 right-0 left-0 absolute bg-white/30 backdrop-blur-md py-10 w-full mobile-nav">
+      <div class="md:hidden block top-20 right-0 left-0 z-100 absolute bg-white/30 backdrop-blur-md py-10 w-full mobile-nav">
         <ul class="flex flex-col gap-8 font-Raleway text-2xl text-center nav-links">
           <li>
-            <a href="#"
-              class="font-bold text-Offwhite nav-link">Features</a>
+            <a href="#" class="font-bold text-White nav-link">Features</a>
           </li>
           <li>
-            <a href="#"
-              class="font-bold text-Offwhite nav-link">Team</a>
+            <a href="#" class="font-bold text-White nav-link">Team</a>
           </li>
           <li>
-            <a href="#"
-              class="font-bold text-Offwhite nav-link">Sign
+            <a href="#" class="font-bold text-White nav-link">Sign
               In</a>
           </li>
         </ul>
       </div>
     </nav>
+    <header class="flex flex-col items-center-safe bg-hero-mobile bg-Navy850 md:bg-hero-desktop bg-contain bg-no-repeat bg-bottom my-[92px] px-10 hero">
+      <img src="/images/illustration-intro.png" alt="hero-img" class="w-[900px] object-cover hero-img">
+      <div class="flex flex-col items-center gap-6 my-15 max-w-[900px] text-center">
+        <h1 class="font-bold text-3xl md:text-5xl leading-10 md:leading-15 hero-heading">All your files in one secure location,
+          accessible anywhere.</h1>
+        <p class="max-w-[800px] md:text-xl hero-subtext">Fylo stores all your most important files in one secure location. Access
+          them wherever
+          you need, share and collaborate with friends family, and co-workers.</p>
+        <button
+          class="group relative bg-gradient-to-r from-Teal200 to-Cyan500 opacity-100 px-12 py-3 rounded-full w-fit overflow-hidden font-medium text-white text-xl transition-all duration-300 ease-in-out cursor-pointer cta">
+          <span class="z-10 relative">Get Started</span>
+          <span
+            class="absolute inset-0 bg-gradient-to-r from-Cyan500 to-Cyan500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></span>
+        </button>
+      </div>
+    </header>
+    <section class="grid px-10">
+      <div class="max-w-[400px]">
+        <img src="/images/icon-access-anywhere.svg" alt="">
+        <h3 class="font-semibold text-2xl">Access your files, anywhere</h3>
+        <p>The ability to use a smartphone, tablet, or computer to access your account means your 
+  files follow you everywhere.</p>
+      </div>
+      <div class="max-w-[400px]">
+        <img src="/images/icon-security.svg" alt="">
+        <h3 class="font-semibold text-2xl">Security you can trust</h3>
+        <p>2-factor authentication and user-controlled encryption are just a couple of the security 
+  features we allow to help secure your files.</p>
+      </div>
+      <div class="max-w-[400px]">
+        <img src="/images/icon-collaboration.svg" alt="">
+        <h3 class="font-semibold text-2xl">Real-time collaboration</h3>
+        <p>Securely share files and folders with friends, family and colleagues for live collaboration. 
+  No email attachments required.</p>
+      </div>
+      <div class="max-w-[400px]">
+        <img src="/images/icon-any-file.svg" alt="">
+        <h3 class="font-semibold text-2xl">Store any type of file</h3>
+        <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
+  file types to be securely stored and shared.</p>
+      </div>
+    </section>
   </main>
   <script type="module" src="/src/main.js"></script>
   <script type="module" src="/src/anime.js"></script>
 </body>
+
+</html>
+
+</html>
 
 </html>
