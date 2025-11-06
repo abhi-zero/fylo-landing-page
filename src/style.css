@@ -2,13 +2,13 @@
 @import 'remixicon/fonts/remixicon.css';
 
 @theme {
-/* - Navy 850 (intro and email sign up background) */
-/* - Navy 900 (main background) */
-/* - Navy 950 (footer background) */
-/* - Navy 800 (testimonials background) */
-/* - Teal 200 (inside call-to-action gradient): hsl(176, 68%, 64%) */
-/* - Cyan 500 (inside call-to-action gradient): hsl(198, 60%, 50%) */
-/* - Red 500 (error): hsl(0, 100%, 63%) */
+  /* - Navy 850 (intro and email sign up background) */
+  /* - Navy 900 (main background) */
+  /* - Navy 950 (footer background) */
+  /* - Navy 800 (testimonials background) */
+  /* - Teal 200 (inside call-to-action gradient): hsl(176, 68%, 64%) */
+  /* - Cyan 500 (inside call-to-action gradient): hsl(198, 60%, 50%) */
+  /* - Red 500 (error): hsl(0, 100%, 63%) */
 
   /* colors */
 
@@ -25,11 +25,18 @@
   /* fonts */
   --font-OpenSans: 'Open Sans', sans-serif;
   --font-Raleway: 'Raleway', sans-serif;
+
+  /* gradient */
+  --image-primary-grad: linear-gradient(90deg, var(--color-Teal200), var(--color-Cyan500));
+
+  /* background images */
+  --background-image-hero-desktop: url('/images/bg-curvy-desktop.svg');
+  --background-image-hero-mobile: url('/images/bg-curvy-mobile.svg');
 }
 
 @layer base{
   body{
-    background-color: var(--color-Navy850);
+    background-color: var(--color-Navy900);
     color: var(--color-White);
     font-family: var(--font-OpenSans);
     font-size: 14px;
