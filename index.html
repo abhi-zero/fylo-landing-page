@@ -18,7 +18,7 @@
     <nav>
       <div
         class="top-0 right-0 left-0 z-100 fixed flex justify-between items-center-safe bg-Navy850 px-8 py-5 nav-container">
-        <a href="#" target="_blank" rel="noopener noreferrer" class="logo"><img src="/images/logo.svg" alt="" /></a>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="logo"><img src="/images/logo.svg" alt="Logo" /></a>
         <ul class="hidden md:flex gap-15 overflow-y-hidden font-Raleway nav-links">
           <li class="nav-li">
             <a href="#"
@@ -150,7 +150,7 @@
     <section class="relative my-[100px] px-8">
       <img src="/images/bg-quotes.png" alt="" class="top-[-20px] left-8 -z-1 absolute w-[30px] md:[w-48]">
       <div class="self-auto gap-5 grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] testimonials">
-        <div class="group bg-Navy800 px-7 py-8 rounded-xl testimonial">
+        <div class="group bg-Navy800 px-7 py-8 rounded-xl cursor-pointer testimonial">
           <p
             class="drop-shadow-2xl group-hover:drop-shadow-Cyan500 text-[1rem] group-hover:text-Cyan500 transition-all duration-300 ease-in-out testimonial-text">
             Fylo has improved our team productivity by an order of magnitude. Since making the
@@ -165,7 +165,7 @@
           </div>
         </div>
 
-        <div class="group bg-Navy800 px-7 py-8 rounded-xl testimonial">
+        <div class="group bg-Navy800 px-7 py-8 rounded-xl cursor-pointer testimonial">
           <p
             class="drop-shadow-2xl group-hover:drop-shadow-Cyan500 text-[1rem] group-hover:text-Cyan500 transition-all duration-300 ease-in-out testimonial-text">
             Fylo has improved our team productivity by an order of magnitude. Since making the
@@ -180,7 +180,7 @@
           </div>
         </div>
 
-        <div class="group bg-Navy800 px-7 py-8 rounded-xl testimonial">
+        <div class="group bg-Navy800 px-7 py-8 rounded-xl cursor-pointer testimonial">
           <p
             class="drop-shadow-2xl group-hover:drop-shadow-Cyan500 text-[1rem] group-hover:text-Cyan500 transition-all duration-300 ease-in-out testimonial-text">
             Fylo has improved our team productivity by an order of magnitude. Since making the
@@ -197,13 +197,16 @@
       </div>
     </section>
     <section class="relative px-3 md:px-8 notify-section">
-      <div class="right-2 left-2 sm:left-[50%] absolute flex flex-col items-center gap-5 bg-Navy800 p-6 md:p-6 rounded-xl min-w-[280px] md:max-w-[900px] sm:translate-x-[-50%] notify">
+      <div
+        class="right-2 left-2 sm:left-[50%] absolute flex flex-col items-center gap-5 bg-Navy800 p-6 md:p-6 rounded-xl min-w-[280px] md:max-w-[900px] sm:translate-x-[-50%] notify">
         <h2 class="font-semibold text-3xl text-center notify-heading">Get early access today</h2>
-        <p class="max-w-[900px] text-center notify-subtext">It only takes a minute to sign up and our free starter tier is extremely
+        <p class="max-w-[900px] text-center notify-subtext">It only takes a minute to sign up and our free starter tier
+          is extremely
           generous. If you have any
           questions, our support team would be happy to help you.</p>
         <form action="" class="flex lg:flex-row flex-col self-center gap-5 mx-auto w-full notify-form">
-          <input type="email" name="email" id="email" class="bg-White px-5 py-3 rounded-full focus:outline-[2px] focus:outline-Cyan500 w-full text-[1rem] text-black">
+          <input type="email" name="email" id="email"
+            class="bg-White px-5 py-3 rounded-full focus:outline-[2px] focus:outline-Cyan500 w-full text-[1rem] text-black">
           <button
             class="group relative bg-gradient-to-r from-Teal200 to-Cyan500 opacity-100 px-3 py-3 rounded-full w-full lg:w-[300px] overflow-hidden text-white transition-all duration-300 ease-in-out cursor-pointer notify-cta">
             <span class="z-10 relative text-center text-nowrap">Get Started For Free</span>
@@ -215,15 +218,70 @@
     </section>
 
   </main>
-  <footer class="bg-Navy950 mt-[225px] py-[200px]">
-    <h1>footer</h1>
+  <footer class="bg-Navy950 mt-[300px] md:mt-[225px] px-8 py-[200px]">
+    <a href="#" target="_blank" rel="noopener noreferrer" class="logo footer-item"><img src="/images/logo.svg"
+        alt="" /></a>
+    <div class="flex md:flex-row flex-col justify-between gap-15 md:gap-9 mt-8 footer-content">
+      <div class="flex md:flex-row flex-col gap-5 md:gap-15 md:max-h-[63px] contact-details">
+        <div class="flex items-start gap-2.5 footer-item">
+          <img src="/images/icon-location.svg" alt="" class="mt-1 w-[14px] h-[14px] object-contain">
+          <p class="max-w-[350px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+            dolore magna aliqua</p>
+        </div>
+        <div class="flex flex-col md:justify-between">
+          <span class="flex items-start gap-2.5 footer-item">
+            <img src="/images/icon-phone.svg" alt="" class="mt-1 w-[14px] h-[14px] object-contain">
+            <p class="max-w-[350px]">+1-543-123-4567</p>
+          </span>
+          <span class="flex items-start gap-2.5 footer-item">
+            <img src="/images/icon-email.svg" alt="" class="mt-1 w-[14px] h-[14px] object-contain">
+            <p class="max-w-[350px]">example@fylo.com</p>
+          </span>
+        </div>
+      </div>
+
+      <div class="flex md:flex-row flex-col gap-15 footer-nav-links">
+        <ul>
+          <li class="text-[16px] footer-item"><a href=""
+              class="hover:font-semibold transition-all duration-300 ease-in-out">About Us</a></li>
+          <li class="text-[16px] footer-item"><a href=""
+              class="hover:font-semibold transition-all duration-300 ease-in-out">Jobs</a></li>
+          <li class="text-[16px] footer-item"><a href=""
+              class="hover:font-semibold transition-all duration-300 ease-in-out">Press</a></li>
+          <li class="text-[16px] footer-item"><a href=""
+              class="hover:font-semibold transition-all duration-300 ease-in-out">Blog</a></li>
+        </ul>
+        <ul>
+          <li class="text-[16px] footer-item"><a href=""
+              class="hover:font-semibold transition-all duration-300 ease-in-out">Contact Us</a></li>
+          <li class="text-[16px] footer-item"><a href=""
+              class="hover:font-semibold transition-all duration-300 ease-in-out">Terms</a></li>
+          <li class="text-[16px] footer-item"><a href=""
+              class="hover:font-semibold transition-all duration-300 ease-in-out">Privacy</a></li>
+        </ul>
+      </div>
+      <ul class="flex self-center md:self-start gap-2.5 h-fit">
+        <li class="footer-item"><a href=""
+            class="px-[11px] py-2 border-2 border-white hover:border-Cyan500 rounded-full hover:text-Cyan500 transition-all duration-300 ease-in-out"><i
+              class="ri-facebook-fill"></i></a></li>
+        <li class="footer-item"><a href=""
+            class="px-[11px] py-2 border-2 border-white hover:border-Cyan500 rounded-full hover:text-Cyan500 transition-all duration-300 ease-in-out"><i
+              class="ri-twitter-x-line"></i></a></li>
+        <li class="footer-item"> <a href=""
+            class="px-[11px] py-2 border-2 border-white hover:border-Cyan500 rounded-full hover:text-Cyan500 transition-all duration-300 ease-in-out"><i
+              class="ri-instagram-line"></i></a>
+        </li>
+      </ul>
+    </div>
   </footer>
-  <section class="h-[100vh]"></section>
   <script type="module" src="/src/main.js"></script>
   <script type="module" src="/src/anime.js"></script>
 </body>
 
 </html>
 </body>
+
+</html>
 
 </html>
